@@ -1,6 +1,18 @@
-"dependencies": {
-  "express": "^4.18.2",
-  "whatsapp-web.js": "^1.24.0",
-  "puppeteer": "^21.3.8",   // Important
-  "qrcode-terminal": "^0.12.0"
+{
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "description": "Your app description",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "whatsapp-web.js": "^1.24.0",
+    "puppeteer": "^21.3.8",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Your Name",
+  "license": "MIT"
 }
