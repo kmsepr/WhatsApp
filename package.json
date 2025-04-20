@@ -1,13 +1,6 @@
-{
-  "name": "whatsapp-http-server",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "whatsapp-web.js": "^1.24.0",
-    "qrcode-terminal": "^0.12.0"
-  }
+"dependencies": {
+  "express": "^4.18.2",
+  "whatsapp-web.js": "^1.24.0",
+  "puppeteer": "^21.3.8",   // Important
+  "qrcode-terminal": "^0.12.0"
 }
