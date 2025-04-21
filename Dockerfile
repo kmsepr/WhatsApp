@@ -1,20 +1,20 @@
-# Use Puppeteer base image with Chromium pre-installed
+# Use the official Puppeteer image as base
 FROM ghcr.io/puppeteer/puppeteer:latest
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy only package files first to cache layer
+# Copy package.json and optionally package-lock.json
 COPY package*.json ./
 
-# Install only production dependencies
-RUN npm ci --omit=dev
+# Install production dependencies only
+RUN npm install --omit=dev
 
-# Copy rest of the app
+# Copy the rest of the application files
 COPY . .
 
-# Expose app port
+# Expose the port the app runs on
 EXPOSE 8000
 
-# Run the app
+# Default command to run the app
 CMD ["node", "server.js"]
